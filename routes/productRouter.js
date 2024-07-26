@@ -23,7 +23,7 @@ router.delete('/delete/:id',protectMiddleware,ownerMiddleware,deleteProduct)
 //Detail product
 //get/api/v1/product/:id
 //midlleware owner
-router.get('/detail/:id',protectMiddleware,ownerMiddleware,detailProduct)
+router.get('/detail/:id',detailProduct)
 
 //Update product
 //put/api/v1/product/:id
